@@ -1,0 +1,20 @@
+
+
+Projeto portifolio
+
+o arquivo inicial deve se chamar index.html para que o servidor que hospede o site
+direcione
+ o usuario diretamente para esse arquivo de forma automatica 
+
+ EX:  http://guipolan.com.br ---->  http://guipolan.com.br/index.html 
+
+APESAR DE NAO SER MUITO COMUM E NECESSARUIS USAMOS AS DIVS, EXITEM OUTAS TAGS 
+QUE FAZEM O MESMO PAPEL POREM TEM UM SIGNIFICADO SOMANTICO DIFERENTE 
+
+
+MAIN - CONTEUDO PRINCIPAL (NAO EH OGRIGGATORIO E NAO EH MUITO USADA)
+HEADER - CABECARIO 
+FOOTER - RODAPE
+NAV - MENUS / LINKS 
+ASIDE - CONTEUDO LOCALIZADO AO LOCALIZADO
+SECTIONS - SECAO DE UMA PAGINA 

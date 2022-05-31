@@ -1,0 +1,68 @@
+
+thead{
+    font-size: 30px;
+    text-align: center;
+    
+    
+}
+
+.coluna-cursos{
+    width: 250px;
+    margin-top: 1200px;
+}
+
+
+
+.coluna-i{
+    width: 80px;
+}
+
+.coluna-ch{
+    width: 280px;
+
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+    
+}
+
+/* esse aqui deu mais ou menos
+.table-hover td:hover{
+    background: red;
+} 
+*/
+.table-hover tbody tr:hover td{
+    background-color: rgb(122, 120, 120);
+        font-size: 18px;
+
+   
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*
+.instituicao{
+    text-align: right;
+    padding-right: 80px;
+}
+.carga-horaria{
+    font-size: 50px;
+}
+.conclusao {
+    padding-left: 130px;
+
+}
+*/
+

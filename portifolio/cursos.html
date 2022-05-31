@@ -1,0 +1,74 @@
+<?php
+    include ('conecta-bd.php');
+
+$sql = $conexao-> prepare("select id_curso, nome, carga_horaria, instituicao from cursos order by nome");
+$sql->execute();
+$cursos = $sql-> fetchAll();
+
+?>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio do Guilherme - Cursos</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/cursos.css">
+    <link rel="stylesheet" href="css/geral.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container"> <img src="img/logotipo.png" alt="logotipo">
+        <nav class="menu">
+
+            <a  href="index.php">Home</a>
+            <a href="contato.php">Contato</a>
+            <a class="active" href="cursos.php">Cursos</a>
+            <a class="" href="curriculo.php">Curriculo</a>
+        </nav>
+        
+        </div>
+    </header> 
+
+        <body>
+                
+            <Div class="container" name="tabela-cursos">
+              <h2>Listagem dos Cursos</h2>
+                
+              <hr>
+                 <table class="table table-hover">
+                     <thead>
+                        <tr>
+                            <th class="text-center  coluna-cursos">Cursos</th>
+                            <th class="text-center coluna-ch">Carga Horária</th>
+                            <th class="text-center coluna-i">Instituição</th>
+                        </tr>
+
+                     </thead>
+                            <tbody>
+                                <?php
+                                foreach ($cursos as $curso) {
+                                ?>         
+                                <tr>
+                                    <td class="nome"><?php echo $curso['nome'];?></td>
+                                    <td class="carga-horaria text-center"><?php echo $curso['carga_horaria']?> hr</td>
+                                    <td class="instituicao text-center"> <?php echo $curso['instituicao'];?> </td>                   
+                                </tr>
+                                
+                            </tbody>
+
+                 </table>
+
+                </hr>
+            </Div>
+        </body>
+            
+<script src="js/contato.js"></script>
+</body>

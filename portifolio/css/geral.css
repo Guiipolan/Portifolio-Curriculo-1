@@ -1,0 +1,84 @@
+/* neste arquivo estao todas as definicoes gerais do site*/
+/* aqui iremos criar uma fonte customizada*/
+   
+/* 
+o arroba eh qnd eu estou utilizando uma customizacao, para chamr essa font face
+
+*/
+
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/poppins-regular.ttf) format("truetype");
+}
+
+body {
+    background-color: rgb(0, 0, 240);
+/* O CODIGO DA OR EH #3B3D5D
+    /* removemos para evitar que o conteúdo comece afastado das "paredes" do browser */
+    font-family: poppins;
+    color: white;
+}
+header {
+    background: rgb(2, 2, 104);
+    height: 60px;
+    width: 1170px;
+    margin: 0 auto;
+
+    /* codigo da cor era #1F2235 
+    padding: 30px 0;
+    
+}
+.container {
+    /* border: 1px solid yellow; */
+    
+    /* ao invés de colocar TODAS as regras de cada lado
+    margin-top: 0; 
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    podemos resumir com uma definição única: top-right-bottom-left
+    margin: 0 auto 0 auto;*/
+}
+.menu {
+    /* border: 1px solid orange; */
+    float: right;
+    margin-top: 10px;
+}
+.menu a {
+    color: #FFFFFF;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 20px;  
+    transition: background 1s;
+    
+}
+.menu a:hover, 
+.menu a.active {
+    background: rgb(252, 0, 0);
+}
+/* seção das pgs. */
+
+section {
+    /* border: 1px solid yellow; */
+    width: 1170px;
+    margin: 80px auto 0 auto ;
+}
+
+aside {
+    /* border: 1px solid pink; */
+    min-height: 300px;
+    display: inline-block;
+    vertical-align:  top;
+}
+aside:first-child {
+    width: 600px;
+}
+aside:last-child {
+    width: 500px;
+    margin-left: 60px;
+}
+
+
+
+
+

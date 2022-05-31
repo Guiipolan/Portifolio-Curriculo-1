@@ -1,0 +1,46 @@
+
+.redes-sociais {
+    margin-top: 100px;
+
+}   
+.redes-sociais a {
+    border: 5px solid #FF4A57;
+    width: 50px;
+    height: 50px;
+    display: inline-block; 
+    margin-right: 30px;
+    border-radius:50%; /* coloca-se para arredondar as bordas*/
+    transition: background 1s; /* para mudar a cor de fundo do icone*/ 
+    color: rgb(122, 120, 120);
+}
+
+/* hover eh para dar o efeito de mudar a cor, o a tem que ser colado*/ 
+
+.redes-sociais a:hover {
+    background:#FF4A57 ;
+}
+h1 {
+    font-size: 45px;    
+}
+
+p {
+    font-size: 18px;
+}
+.polaroid {
+   
+
+    /* alterei o widh mas ele nao alterou o tamanho da imagem */
+    width: 60%; 
+    padding: 10px 10px 80px 10px;
+    background: #FFFFFF;
+    transform:  rotate(10deg);
+    box-shadow: 4px 4px 40px 4px #1f2235;
+    margin-left: 80px;
+}
+
+.polaroid:hover {
+     box-shadow: 4px 4px 40px 4px #1f2235;
+     transform: rotate(15deg);
+     transition: 1s;
+
+} 
